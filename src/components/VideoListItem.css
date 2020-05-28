@@ -1,0 +1,12 @@
+.thumb {
+  display: flex;
+  cursor: pointer;
+}
+
+.thumbImg {
+  width: 60%;
+}
+
+.thumbTitle {
+  padding: 10px;
+}
