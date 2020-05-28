@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Grid } from "@material-ui/core";
 
 import youtube from "./api/youtube-api";
@@ -32,6 +32,10 @@ function App() {
     console.log("something");
     setSelectedVideo(video);
   };
+
+  useEffect(() => {
+    handleSearchSubmit("javascript");
+  }, []);
 
   return (
     <Grid container justify="center" spacing={10} className="App">
